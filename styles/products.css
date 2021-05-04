@@ -1,0 +1,10 @@
+.section:nth-child(2) {
+    background: url('../images/products_bg.jpg') no-repeat center;
+    background-size: cover;
+    background-color: tomato;
+}
+
+
+#productPage {
+
+}
