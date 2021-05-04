@@ -50,6 +50,8 @@
 		<link rel="stylesheet" href="./styles/styles.css" />
 		<link rel="stylesheet" href="./styles/homepage.css">
 		<link rel="stylesheet" href="./styles/social-links.css">
+		<link rel="stylesheet" href="./styles/products.css">
+		<link rel="stylesheet" href="./styles/testimonial.css">
 	</head>
 	<body>
 	<div id="fullpage">
@@ -57,54 +59,67 @@
 		<!-- Add classes where necessary and style the section appropriately -->
 		<div id="homePage" class="content">
 			<div class="home-details">
-			<h1 class="home-heading">Premium <span>Air Max Sneakers</span></h1>
-			<p>
-				Lorem ipsum is simply dummy text of the printing and typesetting.
-				Lorem Ipsum has been the industry’s standard dummy.
-			</p>
-			<a href="#products" class="btn">View More</a>
+				<h1 data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" class="home-heading">Premium <span>Air Max Sneakers</span></h1>
+				<p data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
+					Lorem ipsum is simply dummy text of the printing and typesetting.
+					Lorem Ipsum has been the industry’s standard dummy.
+				</p>
+				<a data-aos="zoom-in" data-aos-delay="150" data-aos-duration="1000" data-aos-easing="ease-in-out" href="#products" class="btn">View More</a>
 			</div>
-			<img src="./images/sneaker1.png" alt="Sneaker" data-tilt />
+			<img data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" src="./images/banner-product.png" alt="Sneaker" data-tilt />
 		</div>
 		</div>
 		<div class="section">
 		<!-- Add classes where necessary and style the section appropriately -->
 		<div id="productPage" class="content">
 			<header class="page-header-container">
-			<div>
-				<h2 class="page-heading">Premium</h2>
-				<h3 class="page-subtitle">Shoe Collection</h3>
-			</div>
-			<div>
+				<div class="page-header" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" >
+					<h2 class="page-heading">Premium</h2>
+					<h3 class="page-subtitle">Shoe Collection</h3>
+				</div>
 				<!-- Add HTML for the numbers here. They DO NOT have to animate -->
-			</div>
+				<div class="numbers-container" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out" >
+					<div class="number">
+						<h4>456</h4>
+						<h5>Shoes Delivered</h5>
+					</div>
+					<div class="number">
+						<h4>560</h4>
+						<h5>New Articles</h5>
+					</div>
+					<div class="number">
+						<h4>786</h4>
+						<h5>Happy Customers</h5>
+					</div>
+				</div>
 			</header>
+			
 			<!-- Product slider, please add your own classes as well to the HTML -->
-			<div id="product-slider" class="owl-carousel">
-			<!-- Product Item -->
-			<div class="product">
-				<img src="./sneaker1.png" alt="Sneaker" />
-				<h3>White Chucks</h3>
-				<button onclick="openModal()">View Detail</button>
-			</div>
-			<!-- Product Item -->
-			<div class="product">
-				<img src="./sneaker1.png" alt="Sneaker" />
-				<h3>White Chucks</h3>
-				<button onclick="openModal()">View Detail</button>
-			</div>
-			<!-- Product Item -->
-			<div class="product">
-				<img src="./sneaker1.png" alt="Sneaker" />
-				<h3>White Chucks</h3>
-				<button onclick="openModal()">View Detail</button>
-			</div>
-			<!-- Product Item -->
-			<div class="product">
-				<img src="./sneaker1.png" alt="Sneaker" />
-				<h3>White Chucks</h3>
-				<button onclick="openModal()">View Detail</button>
-			</div>
+			<div id="product-slider" class="owl-carousel"  data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" >
+				<!-- Product Item -->
+				<div class="product">
+					<img src="./images/product-img1.jpg" alt="Sneaker" />
+					<h3>White Chucks</h3>
+					<button class="btn" onclick="openModal()">View Detail</button>
+				</div>
+				<!-- Product Item -->
+				<div class="product">
+					<img src="./images/product-img2.jpg" alt="Sneaker" />
+					<h3>White Chucks</h3>
+					<button class="btn" onclick="openModal()">View Detail</button>
+				</div>
+				<!-- Product Item -->
+				<div class="product">
+					<img src="./images/product-img4.jpg" alt="Sneaker" />
+					<h3>White Chucks</h3>
+					<button class="btn" onclick="openModal()">View Detail</button>
+				</div>
+				<!-- Product Item -->
+				<div class="product">
+					<img src="./images/product-img5.jpg" alt="Sneaker" />
+					<h3>White Chucks</h3>
+					<button class="btn" onclick="openModal()">View Detail</button>
+				</div>
 			</div>
 			<div id="modal">
 			<!-- Add modal content here. Please pay careful 
@@ -121,8 +136,8 @@
 		<div id="testimonialPage" class="content">
 			<!-- Page header -->
 			<header class="page-header-container">
-			<h2 class="page-heading">Best In Business</h2>
-			<h3 class="page-subtitle">Happy Customers</h3>
+				<h2 class="page-heading">Best In Business</h2>
+				<h3 class="page-subtitle">Happy Customers</h3>
 			</header>
 			<div id="testimonial-slider" class="owl-carousel">
 			<!-- The content for the testimonials has been created using JavaScript. 
