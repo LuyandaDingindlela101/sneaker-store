@@ -72,8 +72,8 @@ body {
 	border: 1px solid black;
 	color: black;
 	z-index: 100;
-	width: 50vw;
-	height: 50vh;
+	/* width: 50vw;
+	height: 50vh; */
 	transform: translate(-50%, -50%);	
 }
 /* Used to prevent the carousel from stretching the screen */
@@ -87,6 +87,10 @@ img {
 }
 
 /* PLEASE START YOUR STYLES UNDERNEATH THIS */
+body {
+     color: #464633;
+}
+
 .btn {
 	font-size: 16px;
 	margin-top: 20px;
@@ -96,5 +100,21 @@ img {
 	border-radius: 50px;
 	text-decoration: none;
 	background: transparent;
+	text-transform: uppercase;
 	border: 2px solid #464646;
+}
+
+.page-header-container {
+     text-align: center;
+     margin-bottom: 50px;
+}
+
+.page-heading {
+     font-size: 35px;
+}
+ 
+.page-subtitle {
+     font-size: 50px;
+     color: #ed2d34;
+     margin-bottom: 20px;
 }

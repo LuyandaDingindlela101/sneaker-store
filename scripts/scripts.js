@@ -36,26 +36,27 @@ let randomUserURL = "https://randomuser.me/api/?results=6";
 
 //   Fetch the data
 fetch(randomUserURL)
-  .then((res) => res.json()) // Turn response into JSON format
-  .then((data) => {
-    // Get results from data and store in variable
-    let users = data.results;
-    // Get testimonial container from HTML
-    let testimonialContainer = document.getElementById("testimonial-slider");
-    // Loop over users and create testimonial for them
-    users.forEach((user) => {
-      testimonialContainer.innerHTML += `
-                <div class="testimonial">
-                    <q class="testimonial-message">Lorem ipsum dolor sit amet consectetur adipisicing elit.</q>
-                    <img class="testimonial-img" src="${user.picture.large}" alt="${user.name.first} ${user.name.last}">
-                    <h4 class="testimonial-name">${user.name.first} ${user.name.last}</h4>
-                </div>
-            `;
-    });
-    //   Initialize testimonial slider
-    $("#testimonial-slider").owlCarousel({
-      loop: true,
-      autoplay: true,
-      margin: 30,
-    });
-  });
+	.then((res) => res.json()) // Turn response into JSON format
+	.then((data) => {
+		// Get results from data and store in variable
+		let users = data.results;
+		// Get testimonial container from HTML
+		let testimonialContainer = document.getElementById("testimonial-slider");
+		// Loop over users and create testimonial for them
+		users.forEach((user) => {
+			testimonialContainer.innerHTML += `
+					<div class="testimonial">
+						<q class="testimonial-message">Lorem ipsum dolor sit amet consectetur adipisicing elit.</q>
+						<img class="testimonial-img" src="${user.picture.large}" alt="${user.name.first} ${user.name.last}">
+						<h4 class="testimonial-name">${user.name.first} ${user.name.last}</h4>
+					</div>
+				`;
+		});
+
+	//   Initialize testimonial slider
+	$("#testimonial-slider").owlCarousel({
+		loop: true,
+		autoplay: true,
+		margin: 30,
+	});
+});

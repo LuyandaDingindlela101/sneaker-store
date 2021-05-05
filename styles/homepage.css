@@ -10,7 +10,6 @@
 
 #homePage {
     display: flex;
-    color: #464633;
     align-items: center;
     justify-content: space-between;
 }
