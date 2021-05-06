@@ -27,6 +27,13 @@
      text-align: center;
 }
 
+
+#testimonialPage .testimonial i {
+     font-size: 16px;
+     color: #c6c6c6;
+     margin-bottom: 20px;
+}
+
 #testimonialPage .testimonial .testimonial-message {
      font-size: 18px;
      font-weight: 200;

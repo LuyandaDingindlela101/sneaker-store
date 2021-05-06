@@ -53,8 +53,8 @@ body {
 }
 
 /* Product slider active item setting */
-#product-slider .active h3,
-#product-slider .active button {
+#product-slider .active + .owl-item h3,
+#product-slider .active + .owl-item button {
 	display: block;
 }
 
