@@ -17,10 +17,10 @@ $(document).ready(function () {
 	$("#product-slider").owlCarousel({
 		items: 1,
 		margin: 50,
-		stagePadding: 350,
+		stagePadding: 400,
 		loop: true,
 		dots: false,
-		// autoplay: true,
+		autoplay: true,
 		center: true
 	});
 });
