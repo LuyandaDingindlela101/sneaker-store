@@ -10,15 +10,19 @@
 
 #contactPage .page-header-container {
      text-align: left;
+     width: calc(100% - 90px);
+     margin: 0 0 0 auto;
 }
 
 #contactPage .form-and-details-container {
      display: flex;
-     justify-content: space-between;
+     margin-left: auto;
+     width: calc(100% - 90px);
+     justify-content: flex-start;;
 }
 
-#contactPage .form-and-details-container .contact-details {
-     width: 50%;
+#contactPage .form-and-details-container .contact-details-container {
+     width: 42%;
 }
 
 #contactPage .form-and-details-container .contact-details-heading {
@@ -73,4 +77,61 @@
      width: 100%;
      color: #ed2d34;
      border: 2px solid #ed2d34;
+}
+
+/* MEDIA QUERRY FOR SCREENS FROM 0 - 800PX */
+@media screen and (max-width: 800px) {
+     #contactPage .page-header-container {
+         margin-left: auto;
+         flex-direction: column;
+         width: calc(100% - 90px);
+     }
+
+     #contactPage .form-and-details-container {
+          margin-left: auto;
+          flex-direction: column;
+          width: calc(100% - 90px);
+     }
+     
+     #contactPage .form-and-details-container .contact-details-container {
+          width: 100%;
+     }
+
+     #contactPage .form-and-details-container .contact-details-heading {
+          font-size: 25px;
+          margin-bottom: 15px;
+     }
+
+     #contactPage .form-and-details-container .contact-details-description {
+          font-size: 15px;
+          margin-bottom: 20px;
+     }
+
+     #contactPage .form-and-details-container .contact-details {
+          width: 100%;
+     }
+
+     #contactPage .form-and-details-container .contact-details .detail i {
+          font-size: 20px;
+          margin-bottom: 0px;
+     }
+
+     #contactPage .form-and-details-container .contact-details .detail {
+          font-size: 15px;
+          margin-bottom: 25px;
+     }
+
+     #contactPage .form-and-details-container .contact-details .social-links {
+          display: block;
+     }
+
+     #contactPage .form-and-details-container #contact-form {
+          width: 90%;
+          margin: 20px 0 0 0;
+     }
+
+     #contactPage .form-and-details-container #contact-form input, #contactPage .form-and-details-container #contact-form textarea {
+          font-size: 15px;
+          margin-bottom: 10px;
+     }
 }

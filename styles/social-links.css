@@ -46,4 +46,16 @@
     font-size: 18px;
     color: #000000;
     font-weight: 500;
+    user-select: none;
+}
+
+/* MEDIA QUERRY FOR SCREENS FROM 0 - 600PX */
+@media screen and (max-width: 600px) {
+    .social-links {
+        display: none;
+    }
+
+    .copyright-footer {
+        display: none;
+    }
 }
